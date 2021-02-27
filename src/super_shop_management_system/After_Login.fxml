@@ -10,6 +10,7 @@
       <Button fx:id="Product_btn" alignment="CENTER" layoutX="235.0" layoutY="199.0" mnemonicParsing="false" onAction="#Product_btn_Action" prefHeight="25.0" prefWidth="227.0" text="Current Product" />
       <Button fx:id="Employee_btn" alignment="CENTER" layoutX="235.0" layoutY="257.0" mnemonicParsing="false" onAction="#Employee_btn_Action" prefHeight="25.0" prefWidth="227.0" text="Employee Information" />
       <Button fx:id="Credits_btn" alignment="CENTER" layoutX="238.0" layoutY="319.0" mnemonicParsing="false" onAction="#Credits_btn_Action" prefHeight="25.0" prefWidth="227.0" text="Credits" />
+      <Button fx:id="Backbtn1" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Backbtn1_Action" text="Back" />
       
    </children>
 </AnchorPane>
