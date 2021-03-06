@@ -21,16 +21,14 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author Rudra
+ * @author Rudra Ali
  */
 public class CreditsController implements Initializable {
 
     @FXML
     private Button Back_btn;
 
-    /**
-     * Initializes the controller class.
-     */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
