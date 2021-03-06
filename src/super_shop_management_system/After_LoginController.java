@@ -40,11 +40,21 @@ public class After_LoginController implements Initializable {
     }    
 
     @FXML
-    private void Import_btn_Action(ActionEvent event) {
+    private void Import_btn_Action(ActionEvent event)throws IOException {
+        Parent After_Login = FXMLLoader.load(getClass().getResource("Import.fxml"));
+        Scene src9 = new Scene (After_Login);
+        Stage app_primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_primaryStage.setScene(src9);
+        app_primaryStage.show();
     }
 
     @FXML
-    private void Sell_btn_Action(ActionEvent event) {
+    private void Sell_btn_Action(ActionEvent event)throws IOException {
+       Parent After_Login = FXMLLoader.load(getClass().getResource("Selll.fxml"));
+        Scene src9 = new Scene (After_Login);
+        Stage app_primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_primaryStage.setScene(src9);
+        app_primaryStage.show();
     }
 
     @FXML
@@ -52,7 +62,12 @@ public class After_LoginController implements Initializable {
     }
 
     @FXML
-    private void Employee_btn_Action(ActionEvent event) {
+    private void Employee_btn_Action(ActionEvent event)throws IOException {
+        Parent Credits = FXMLLoader.load(getClass().getResource("Employee.fxml"));
+        Scene src2 = new Scene (Credits);
+        Stage app_primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_primaryStage.setScene(src2);
+        app_primaryStage.show();
     }
 
     @FXML
