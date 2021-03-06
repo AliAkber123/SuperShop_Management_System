@@ -21,7 +21,7 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author Rudra Ali
+ * @author Rudra Ali Akber
  */
 public class CreditsController implements Initializable {
 
