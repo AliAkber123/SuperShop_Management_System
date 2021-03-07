@@ -3,6 +3,10 @@ package super_shop_management_system;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -59,6 +63,22 @@ public class After_LoginController implements Initializable {
 
     @FXML
     private void Product_btn_Action(ActionEvent event) {
+        String url="jdbc:mysql://127.0.0.1/shms1";
+        String username="root";
+        String pass="";
+        try{
+        Connection conn = DriverManager.getConnection(url, username, pass);
+        Statement stmt=conn.createStatement();
+        String sql="select serial,username from login_information";
+        ResultSet res=stmt.executeQuery(sql);
+        
+        while(res.next()){
+            System.out.println(res.getString("Serial")+" "+res.getString("UserName"));
+        }
+        
+        }catch(Exception e){
+            System.out.println(e);
+        }
     }
 
     @FXML

@@ -42,13 +42,49 @@ public class Main_GUIController implements Initializable {
 
     @FXML
     private void btn_submit_Action(ActionEvent event)throws IOException {
+        
+        String userid = txtfld_userID.getText();
+        String password = passfld_pass.getText();
+        
+        if(password.equals("123") && userid.equals("Kaka"))
+        {
+        
+         Parent After_Login = FXMLLoader.load(getClass().getResource("After_Login.fxml"));
+        Scene src1 = new Scene (After_Login);
+        Stage app_primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_primaryStage.setScene(src1);
+        app_primaryStage.show();
+        
+        }
+        
+        
+        if(password.equals("321") && userid.equals("Messi"))
+        {
+        
         Parent After_Login = FXMLLoader.load(getClass().getResource("After_Login.fxml"));
         Scene src1 = new Scene (After_Login);
         Stage app_primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         app_primaryStage.setScene(src1);
         app_primaryStage.show();
         
+        }
+        
+        else
+        {
+        
 
+            
+        }
+        
+        
+       /* Parent After_Login = FXMLLoader.load(getClass().getResource("After_Login.fxml"));
+        Scene src1 = new Scene (After_Login);
+        Stage app_primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_primaryStage.setScene(src1);
+        app_primaryStage.show();
+        */
+
+       
     }
 
  
