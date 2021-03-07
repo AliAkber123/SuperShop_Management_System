@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Super_Shop_Management_System.jar" size="231848" download="eager" />
+    <jar href="Super_Shop_Management_System.jar" size="228244" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Super_Shop_Management_System" >
     <param name="requiredFXVersion" value="8.0+"/>
