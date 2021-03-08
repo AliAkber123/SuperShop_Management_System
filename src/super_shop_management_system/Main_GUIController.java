@@ -46,7 +46,7 @@ public class Main_GUIController implements Initializable {
         String userid = txtfld_userID.getText();
         String password = passfld_pass.getText();
         
-        if(password.equals("123") && userid.equals("Kaka"))
+        if(password.equals("123") && userid.equals("Siyam"))
         {
         
          Parent After_Login = FXMLLoader.load(getClass().getResource("After_Login.fxml"));
@@ -58,7 +58,7 @@ public class Main_GUIController implements Initializable {
         }
         
         
-        if(password.equals("321") && userid.equals("Messi"))
+        if(password.equals("321") && userid.equals("Rahim"))
         {
         
         Parent After_Login = FXMLLoader.load(getClass().getResource("After_Login.fxml"));
@@ -68,6 +68,18 @@ public class Main_GUIController implements Initializable {
         app_primaryStage.show();
         
         }
+        
+         if(password.equals("13579") && userid.equals("Fahim"))
+        {
+        
+        Parent After_Login = FXMLLoader.load(getClass().getResource("After_Login.fxml"));
+        Scene src1 = new Scene (After_Login);
+        Stage app_primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_primaryStage.setScene(src1);
+        app_primaryStage.show();
+        
+        }
+        
         
         else
         {

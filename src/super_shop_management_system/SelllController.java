@@ -4,9 +4,12 @@
  * and open the template in the editor.
  */
 package super_shop_management_system;
-
+import java.sql.*;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -56,6 +59,20 @@ public class SelllController implements Initializable {
 
     @FXML
     private void Submit_btn_Action(ActionEvent event) {
+        
+        String url="jdbc:mysql://127.0.0.1/import";
+        String username="root";
+        String pass="";
+        try{
+        Connection conn = DriverManager.getConnection(url, username, pass);
+        Statement stmt=conn.createStatement();
+        String sql="DELETE FROM `importtable` WHERE Price = 10000";
+        
+         }catch(Exception e){
+            System.out.println(e);
+        }
+        
+        
     }
 
     @FXML
